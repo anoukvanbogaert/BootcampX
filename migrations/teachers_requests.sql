@@ -8,7 +8,7 @@ CREATE TABLE teachers (
 
 
 
-CREATE TABLE assistance_request (
+CREATE TABLE assistance_requests (
   id SERIAL PRIMARY KEY,
   assignment_id INTEGER REFERENCES assignments(id) ON DELETE CASCADE,
   student_id INTEGER REFERENCES students(id) ON DELETE CASCADE,
